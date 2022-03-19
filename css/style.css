@@ -1,0 +1,648 @@
+/* Police d'écriture - Google Font */
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+}
+
+
+/* Paramètres généraux de la page */
+
+main { 
+    margin: 0px 40px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-weight: bold;
+    color: black;
+    font-size: 24px;
+}
+
+.colorLightBlue {
+    color: #deebff;
+}
+
+.colorBlue {
+    color: #0065FC;
+}
+
+.colorGrey {
+    color: #F2F2F2;
+}
+
+.colorGreyStar { 
+    color: rgb(204, 202, 202);
+}
+
+.backBlue {
+    background-color: #0065FC;
+}
+
+.backGrey {
+    background-color: #F2F2F2;
+}
+
+.boxShadow {
+    box-shadow: 5px 5px 5px 1px #F2F2F2;
+}
+
+.spaceBetween{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.spaceAround {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flexRowBetween {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+.column {
+    flex-direction: column;
+}
+
+.borderRadius {
+    border-radius: 30px;
+}
+
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 7%;
+    margin: 20px 20px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Navigation */
+
+nav {
+    width: 90%;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    margin: 0;
+}
+
+nav li {
+    margin: 0px 25px;
+    padding: 0px 25px;
+}
+
+nav a:hover {
+    border-top: 3px solid #0065FC;
+    color: #0065FC; 
+}
+
+nav a {
+    font-size: 25px;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+/* Ajoutez le formulaire de recherche */
+
+.form h1 {
+    margin-bottom: 10px;
+}
+
+.form p {
+    margin-top: 0px;
+}
+
+.localisation, input {
+    padding: 15px 15px;
+    font-size: 20px;
+}
+
+.localisation {
+    margin-right: -5px;
+    border-radius: 15px 0px 0px 15px;
+    border: 2px solid #F2F2F2;
+}
+
+.text {
+    border: 2px solid #F2F2F2;
+    width: 15%;
+}
+
+.button {
+    margin-left: -5px;
+    border-radius: 0px 15px 15px 0px;
+    font-weight: bolder;
+    color: white;
+    border: 2px solid #0065FC;
+}
+
+.button-responsive {
+    display: none;
+}
+
+::placeholder{
+    font-weight: bolder;
+    color: black;
+}
+
+/* Ajout de la partie Filtres */
+
+
+.filtres {
+    display: flex;
+    align-items: center;
+    margin: 30px 0px;
+}
+
+.bulle {
+    height: 50px;
+    border : 3px solid #F2F2F2;
+    border-radius: 35px;
+    margin-left: 20px;
+}
+
+.bulle span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -3px;
+    border-radius: 25px;
+    height: 52px;
+    width: 52px;
+    background-color: #deebff;
+}
+
+.bulle h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+    font-weight: bold;
+}
+
+/* Effet au survol des filtres */
+
+
+.bulle:hover > span {
+    background-color: #0065FC;
+    color: #deebff;
+}
+
+.bulle:hover > h2 {
+    color: #0065FC;
+}
+
+/* Fin de partie */
+
+aside {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+aside p {
+    margin-left: 10px;
+}
+
+aside span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 2px #deebff solid;
+    height: 26px;
+    width: 26px;
+    border-radius: 25px;
+    padding: 2px;
+}
+
+
+/* Section “Hébergements à Marseille” */
+
+.hebergement {
+    padding: 30px 45px;
+    margin-right: 40px;
+    flex: 2;
+    height: 800px;
+}
+
+.card-multi {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.card {
+    width: 30%;
+    height: auto;
+    margin: 20px 1px; 
+    padding: 6px;
+    background-color: white;
+  }
+    .card a { 
+    text-decoration: none;
+  }
+
+    .card-image {
+    height: 170px;
+    width: 100%;
+    border-radius: 30px 30px 0px 0px;
+    object-fit: cover;   
+    overflow: hidden;
+  }
+
+.card-body {
+    padding-left: 20px;
+}
+
+    .card-body h2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+    .card-body p {
+    margin-top: 0px;
+    margin-bottom: 8px;
+    color: black;
+    }
+    
+    .star {
+        font-size: 18px;
+        margin-right: 0px;
+        padding-bottom: 10px;
+        display: flex;
+        width: 32%;
+    }
+
+
+/* Section “Les plus populaires” */
+
+.populaires {
+    padding: 30px 45px;
+    flex: 1;
+    height: 800px;
+    overflow: hidden;
+}
+
+.card-multi-pop {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card-pop {
+    width: 95%;
+    height: auto;
+    margin: 20px 1px; 
+    padding: 4px;
+    background-color: white;
+  }
+    .card-pop a { 
+    display: flex;
+    flex-flow: row nowrap;
+    text-decoration: none;
+  }
+
+    .card-pop-image {
+    height: 190px;
+    width: 35%; 
+    border-radius: 30px 0px 0px 30px;
+    object-fit: cover;   
+    overflow: hidden;
+}
+
+.card-pop-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    padding-left: 30px;
+    padding-right: 50px;
+}
+
+    .card-pop-body h2 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+    .card-pop-body p {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color: black;
+    }
+
+
+
+/* Section “Activités à Marseille” */
+
+.activity {
+    margin-top: 60px;
+}
+
+.activity h1 {
+    margin-bottom: 0px;
+}
+
+.card-multi-act {
+    height: 800px;
+}
+
+.card-activity1 {
+    width: 23%;
+}
+
+.card-activity2 {
+    width: 23%;
+}
+
+.card-activity {
+    margin: 45px 1px; 
+    background-color: white;    
+  }
+    .card-activity a { 
+    text-decoration: none;
+}
+
+.card-act-image {
+    width: 100%; 
+    border-radius: 30px 30px 0px 0px;
+    object-fit: cover;   
+    overflow: hidden;
+}
+.img1 {
+    height: 600px;
+}
+
+.img2 {
+    height: 275px;
+}
+
+.img3 {
+    height: 200px;
+}
+
+.img4 {
+    height: 225px;
+}
+
+.img5 {
+    height: 250px;
+}
+
+.card-act-body {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 20px 70px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+}
+
+.footer {
+    margin-right: 450px;
+}
+
+.footer p {
+    margin-top: 14px;
+    margin-bottom: 0px;
+}
+
+
+/* Responsive - media queries */
+
+
+@media screen and (max-device-width: 992px) {
+    main {
+    font-size: 18px;
+    }
+    h1 {
+    font-size: 26px;
+    }
+    h2 {
+    font-size: 20px;
+    }
+    .logo {
+    width: 12%;     
+    }
+    nav a {
+    font-size: 21px;
+    }
+    .form span, input {
+    font-size: 16px;
+    }
+    .filtres {
+    flex-wrap: wrap;
+    }
+    .bulle {
+    margin-bottom: 10px;
+    }
+    .Marseille {
+    flex-direction: column;
+    }
+    .hebergement {
+    margin-bottom: 30px;
+    margin-right: 0px!important;
+    }
+    .card-multi-act {
+    flex-flow: row wrap;
+    height: 1000px;
+    }
+    .card-activity1, .card-activity2 {
+    width: 45%;
+    height: 450px;
+    }
+    .img1 {
+    height: 300px;
+    }
+    .img2 {
+    height: 137.5px;
+    }
+    .img3 {
+    height: 100px;
+    }
+    .img4 {
+    height: 112.5px;
+    }
+    .img5 {
+        height: 125px;
+    }
+    .footer {
+    margin-right: 225px;
+    }
+}
+
+@media screen and (max-device-width: 768px) {
+    body {
+    margin: 0px 0px;
+    }
+    main {
+    font-size: 14px;
+    margin: 0px;
+    }
+    .form, .filtres, aside, .hebergement, .populaires, .activity {
+    padding: 10px 20px;
+    }
+    h1 {
+    font-size: 22px;
+    display: flex;
+    flex-wrap: wrap;
+    }
+    h2 {
+    font-size: 16px;
+    }
+    header {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    }
+    .logo {
+    width: 35%;     
+    }
+    nav {
+    width: 100%;
+    }
+    nav a {
+    justify-content: center;
+    font-size: 18px;
+    width: 50%;
+    }
+    nav ul {
+    justify-content: center;
+    height: 80px;
+    padding: 0;
+    border-bottom: 3px solid #F2F2F2;
+    }
+    nav a:hover {
+    border-bottom: 3px solid #0065FC;
+    color: #0065FC; 
+    }
+    .text {
+    width: 60%;
+    }
+    .button {
+    display: none;
+    }
+    form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    }
+    .button-responsive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -13px;
+    border-radius: 20px;
+    height: 50px;
+    width: 50px;
+    border: 2px solid #0065FC;
+    }
+    .filtres h2 {
+    width: 100%;
+    }
+    .bulle {
+    margin-left: 0px;
+    margin-right: 10px;
+    }
+    .bulle span {
+    width: 95px;
+    }
+    .Marseille {
+    flex-direction: column-reverse;
+    }
+    .populaires {
+    border-radius: 0%;
+    }
+    .card-pop-image {
+    height: 140px;
+    width: 50%;
+    }
+    .hebergement {
+    background-color: white;
+    }
+    .card-multi {
+    flex-flow: column wrap;
+    justify-content: space-between;
+    }
+    .card {
+    width: 95%;
+    }
+    .hebergement > p {
+        font-size: 18px;
+    }
+    .activity {
+    margin-top: 0px;
+    flex-direction: column;
+    height: 1420px;
+    }
+    .card-activity1 {
+    width: 100%;
+    height: 210px;
+    }
+    .card-activity2 {
+    width: 100%;
+    }
+    .card-pop, .card-image, .img1, .img2, .img3, .img4, .img5 {
+    height: 140px;
+    }
+    footer {
+    flex-direction: column;
+    padding: 30px 40px;
+    padding-top: 10px;
+    }
+    .footer {
+    margin-right: 0;
+    }
+    .footer h2 {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .footer p {
+    font-size: 16px;
+    }
+}
